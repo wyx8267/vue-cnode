@@ -16,7 +16,16 @@
                 </li>
                 <li v-for="post in posts" :key="post.id">
                     <!-- avatar -->
-                    <img :src="post.author.avatar_url" alt />
+                    <router-link
+                        :to="{
+                            name:'user_info',
+                            params:{
+                                loginname:post.author.loginname
+                            }
+                        }"
+                    >
+                        <img :src="post.author.avatar_url" alt />
+                    </router-link>
                     <!-- reply & visit -->
                     <span class="allCount">
                         <span class="replyCount">{{post.reply_count}}</span>
@@ -29,12 +38,14 @@
                         <span>{{post | tabFormatter}}</span>
                     </span>
                     <!-- title -->
-                    <router-link :to="{
+                    <router-link
+                        :to="{
                         name:'post_content',
                         params:{
                             id:post.id
                         }
-                    }">
+                    }"
+                    >
                         <span>{{post.title}}</span>
                     </router-link>
                     <!-- last reply date -->
@@ -78,10 +89,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-* {
-    padding: 0;
-    margin: 0;
-}
 .postList {
     .loading {
         text-align: center;
