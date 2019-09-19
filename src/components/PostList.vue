@@ -51,26 +51,36 @@
                     <!-- last reply date -->
                     <span class="lastReply">{{post.last_reply_at | formatDate}}</span>
                 </li>
+                <li>
+                    <Pagination @handleList="renderList" />
+                </li>
             </ul>
         </div>
     </div>
 </template>
 
 <script>
+import Pagination from "./Pagination";
 export default {
     name: "PostList",
     data() {
         return {
             isLoading: false,
-            posts: []
+            posts: [],
+            postPage: 1
         };
+    },
+    components: {
+        Pagination
     },
     methods: {
         getData() {
             this.$http
                 .get("https://cnodejs.org/api/v1/topics", {
-                    page: 1,
-                    limit: 20
+                    params: {
+                        page: this.postPage,
+                        limit: 20
+                    }
                 })
                 .then(res => {
                     this.isLoading = false;
@@ -79,6 +89,10 @@ export default {
                 .catch(err => {
                     throw new Error(err);
                 });
+        },
+        renderList(value) {
+            this.postPage = value;
+            this.getData();
         }
     },
     beforeMount() {

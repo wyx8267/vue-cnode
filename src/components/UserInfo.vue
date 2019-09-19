@@ -84,18 +84,21 @@ export default {
         padding-top: 300px;
     }
     .userInformation {
-        background-color: #fff;
         width: 75%;
         margin: 10px auto;
         section {
+            background-color: #fff;
             padding: 12px;
+            border-radius: 3px;
             img {
                 width: 40px;
             }
         }
         .replies,
         .topics {
-            border-top: 10px #ddd solid;
+            background-color: #fff;
+            margin-top: 10px;
+            border-radius: 3px;
             p {
                 padding: 12px 0 12px 12px;
                 background-color: #f6f6f6;

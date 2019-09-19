@@ -2,6 +2,7 @@
     <div id="app">
         <Header />
         <div class="main">
+            <router-view name="sidebar"></router-view>
             <router-view name="main"></router-view>
         </div>
     </div>
@@ -21,8 +22,8 @@ export default {
 </script>
 
 <style>
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
 }
 body {
