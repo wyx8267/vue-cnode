@@ -27,7 +27,7 @@ export default {
     margin: 0;
 }
 body {
-    background: #e1e1e1;
+    background: #e7f3ee;
 }
 .main {
     width: 80%;

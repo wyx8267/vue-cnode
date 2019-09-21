@@ -116,7 +116,7 @@ export default {
     margin-top: 0;
     .topbar {
         padding: 10px;
-        background-color: #f5f5f5;
+        background-color: #e5e5e5;
         height: 16px;
         font-size: 12px;
     }

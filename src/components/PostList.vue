@@ -165,12 +165,12 @@ export default {
                 }
                 .putGood,
                 .putTop {
-                    background: #8b0;
+                    background: #3c9d9b;
                     color: #fff;
                 }
                 .topiclistTab {
-                    background-color: #e5e5e5;
-                    color: #999;
+                    background-color: #e7f3ee;
+                    color: #555;
                 }
                 .lastReply {
                     text-align: right;
@@ -183,15 +183,15 @@ export default {
                 }
                 .topbar {
                     height: 40px;
-                    background-color: #f5f5f5;
+                    background-color: #e5e5e5;
                     span {
                         font-size: 14px;
-                        color: #8b0;
+                        color: #3c9d9b;
                         line-height: 40px;
                         margin: 0 10px;
                         cursor: pointer;
                         &:hover {
-                            color: #dad;
+                            color: #394a6d;
                         }
                     }
                 }

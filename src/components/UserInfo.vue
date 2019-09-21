@@ -101,7 +101,7 @@ export default {
             border-radius: 3px;
             p {
                 padding: 12px 0 12px 12px;
-                background-color: #f6f6f6;
+                background-color: #e5e5e5;
                 font-size: 14px;
             }
             li {

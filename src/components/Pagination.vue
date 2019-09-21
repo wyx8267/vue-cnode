@@ -94,7 +94,7 @@ export default {
     }
     .currentPage {
         color: #fff;
-        background-color: #1f1b1b;
+        background-color: #394a6d;
     }
 }
 </style>

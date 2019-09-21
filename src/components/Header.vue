@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-    background-color: #5a5555;
+    background-color: #394a6d;
     height: 50px;
     img {
         max-width: 120px;
@@ -51,7 +51,7 @@ export default {
             padding: 10px 15px;
             a {
                 text-decoration: none;
-                color: #ccc;
+                color: #e7f3ee;
                 font-size: 14px;
                 text-shadow: none;
             }

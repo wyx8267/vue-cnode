@@ -145,7 +145,7 @@ export default {
         border-radius: 3px;
         .topbar {
             padding: 10px;
-            background-color: #f6f6f6;
+            background-color: #e5e5e5;
             height: 16px;
             font-size: 12px;
             margin-top: 10px;
